@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coreplus - Contact Us</title>
+    <link rel="stylesheet" href="animate.min.css" />
+    <style>
+      @font-face {
+        font-family: Museo Sans;
+        src: url("/fonts/museo_sans/MuseoSans-100.otf") format("opentype"),
+          url("/fonts/museo_sans/MuseoSans-300.otf") format("opentype"),
+          url("/fonts/museo_sans/MuseoSans-500.otf") format("opentype"),
+          url("/fonts/museo_sans/MuseoSans-700.otf") format("opentype");
+
+        font-weight: 100, 300, 500, 700;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Museo Sans, sans-serif;
+        /* color: #7f7f7f; */
+        scroll-behavior: smooth;
+      }
+      /* .mobile-view {
+        display: none;
+      } */
+      .contact-hero {
+        background-color: #f98731;
+        color: #fff;
+        padding: 10px;
+      }
+      .contact-hero h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 20px 0;
+      }
+      .contact-hero span {
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+
+      @media screen and (max-width: 425px) {
+        .mobile-view {
+          display: block;
+        }
+      }
+      .contact-hero-agents {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .contact-hero-agents .agents {
+        margin-left: -40px;
+      }
+      .contact-hero-agents .agents:hover {
+        transform: scale(1.1);
+        transition: 100ms ease-in-out;
+      }
+      .contact-send-message {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .contact-send-message a {
+        color: #f98731;
+        text-decoration: none;
+        /* border: 1px solid #fff; */
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 10px 30px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        font-weight: 500;
+      }
+      .cc-block {
+        margin: 20px;
+        padding: 15px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+      }
+      .cc-block img {
+        margin-bottom: 20px;
+      }
+      .cc-block {
+        text-align: justify;
+      }
+
+      .cc-block-button {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      .cc-block-button a {
+        color: #f98731;
+        background-color: #fff;
+        border: #f98731 1px solid;
+        padding: 10px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-view">
+      <div class="container">
+        <div class="contact-hero">
+          <div>
+            <h3>Let’s chat with our live support team</h3>
+            <span
+              >Live Support is available <br />
+              Monday-Saturday 09:00 AM - 5.00 PM (AEST)</span
+            >
+          </div>
+          <div class="contact-hero-agents">
+            <img
+              class="agents agent1"
+              src="/templates/images/cca1.png"
+              width="80px"
+              alt=""
+            />
+            <img
+              class="agents agent2"
+              src="/templates/images/cca2.png"
+              width="80px"
+              alt=""
+            />
+            <img
+              class="agents agent3"
+              src="/templates/images/cca3.png"
+              width="80px"
+              alt=""
+            />
+            <img
+              class="agents agent4"
+              src="/templates/images/cca4.png"
+              width="80px"
+              alt=""
+            />
+            <img
+              class="agents agent5"
+              src="/templates/images/cca5.png"
+              width="80px"
+              alt=""
+            />
+          </div>
+          <div class="contact-send-message">
+            <a href="">Send us a message</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="cc-customer cc-block">
+              <div>
+                <img src="/templates/images/customer.svg" alt="" />
+              </div>
+              <div class="cc-block-span">
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
+                >
+              </div>
+              <div class="cc-block-button">
+                <a href="">Schedule a Demo &#8594;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cc-customer cc-block">
+              <div>
+                <img src="/templates/images/customer.svg" alt="" />
+              </div>
+              <div class="cc-block-span">
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
+                >
+              </div>
+              <div class="cc-block-button">
+                <a href="">Schedule a Demo &#8594;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cc-customer cc-block">
+              <div>
+                <img src="/templates/images/customer.svg" alt="" />
+              </div>
+              <div class="cc-block-span">
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
+                >
+              </div>
+              <div class="cc-block-button">
+                <a href="">Schedule a Demo &#8594;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
