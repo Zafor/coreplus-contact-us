@@ -108,10 +108,14 @@
         font-weight: 500;
       }
       .cc-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 20px;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
         margin-bottom: 20px;
         margin-top: 20px;
+        height: 250px;
       }
       .cc-block img {
         margin-bottom: 20px;
@@ -219,6 +223,11 @@
         margin-top: 44px;
         display: block;
       }
+      @media screen and (max-width: 425px) {
+        .contact-us-gif {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -294,13 +303,17 @@
                 <img src="/templates/images/customer.svg" alt="" />
               </div>
               <div class="cc-block-span">
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
-                >
+                <span>
+                  Schedule a one-on-one demo call with our customer success
+                  experts to learn more about the coreplus basics and get
+                  started in no time.
+                </span>
               </div>
               <div class="cc-block-button">
-                <a href="">Schedule a Demo &#8594;</a>
+                <a href="https://portal.coreplus.com.au/coreplusdemo"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Schedule a Demo &#8594;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                >
               </div>
             </div>
           </div>
@@ -310,13 +323,15 @@
                 <img src="/templates/images/telephone.svg" alt="" />
               </div>
               <div class="cc-block-span">
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
-                >
+                <span>
+                  coreplus is here to help. Schedule phone support with our
+                  customer support agents now.
+                </span>
               </div>
               <div class="cc-block-button">
-                <a href="">Schedule Phone Support &#8594;</a>
+                <a href="https://portal.coreplus.com.au/coreplussupport"
+                  >Schedule Phone Support &#8594;</a
+                >
               </div>
             </div>
           </div>
@@ -326,13 +341,17 @@
                 <img src="/templates/images/help-center.svg" alt="" />
               </div>
               <div class="cc-block-span">
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
-                >
+                <span>
+                  Delve right into all the advice and answers direct from the
+                  coreplus Team.
+                </span>
               </div>
               <div class="cc-block-button">
-                <a href="">Help Center &#8594;</a>
+                <a href="https://help.coreplus.com.au">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Help Center
+                  &#8594;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
               </div>
             </div>
           </div>
