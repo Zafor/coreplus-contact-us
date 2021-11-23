@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coreplus - Contact Us</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <style>
+      @font-face {
+        font-family: Museo Sans;
+        src: url("/fonts/museo_sans/MuseoSans-100.otf") format("opentype"),
+          url("/fonts/museo_sans/MuseoSans-300.otf") format("opentype"),
+          url("/fonts/museo_sans/MuseoSans-500.otf") format("opentype"),
+          url("/fonts/museo_sans/MuseoSans-700.otf") format("opentype");
+
+        font-weight: 100, 300, 500, 700;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Museo Sans, sans-serif;
+        /* color: #7f7f7f; */
+        scroll-behavior: smooth;
+      }
+      /* .mobile-view {
+        display: none;
+      } */
+      .contact-hero {
+        background-color: #f98731;
+        color: #fff;
+        padding: 10px;
+      }
+      .contact-hero h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 20px 0;
+      }
+      .contact-hero span {
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+
+      @media screen and (max-width: 425px) {
+        .mobile-view {
+          display: block;
+        }
+      }
+      .contact-hero-agents {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .contact-hero-agents-desktop {
+        margin: 20px 0px 20px 30px;
+        max-width: 260px;
+      }
+      .contact-hero-agents-desktop .agents {
+        margin-left: -40px;
+      }
+      .contact-hero-agents .agents {
+        margin-left: -40px;
+      }
+      .contact-hero-agents-desktop .agents:hover {
+        transform: scale(1.1);
+        transition: 100ms ease-in-out;
+      }
+      .contact-hero-agents .agents:hover {
+        transform: scale(1.1);
+        transition: 100ms ease-in-out;
+      }
+      .contact-send-message-desktop {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        max-width: 260px;
+        /* text-align: center; */
+      }
+      .contact-send-message {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .contact-send-message-desktop a {
+        color: #f98731;
+        text-decoration: none;
+        /* border: 1px solid #fff; */
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 10px 30px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        font-weight: 500;
+        max-width: 260px;
+      }
+      .contact-send-message a {
+        color: #f98731;
+        text-decoration: none;
+        /* border: 1px solid #fff; */
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 10px 30px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        font-weight: 500;
+      }
+      .cc-block {
+        padding: 20px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .cc-block img {
+        margin-bottom: 20px;
+      }
+      .cc-block {
+        text-align: justify;
+      }
+
+      .cc-block-button {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      .cc-block-button a {
+        color: #f98731;
+        background-color: #fff;
+        border: #f98731 1px solid;
+        padding: 10px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .contact-us-gif img {
+        max-width: 100%;
+      }
+      .desktop-view {
+        background-color: #f98731;
+        padding-top: 40px;
+      }
+      .contact-us-hero-text {
+        color: #fff;
+      }
+      .general-enquery {
+        margin: auto;
+        margin: 40px 0px 40px 0px;
+      }
+      .enquery-content {
+        display: flex;
+        /* flex-direction: column; */
+        padding: 25px 0px 30px 0px;
+        background-image: url("images/mail-div-bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .enquery-content p {
+        padding-left: 40px;
+        max-width: 300px;
+        font-size: 24px;
+        color: #fff;
+      }
+      .enquery-content img {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+      .contact-email-address {
+        border-right: #f98731 1px dashed;
+        border-top: #f98731 1px dashed;
+        border-bottom: #f98731 1px dashed;
+        padding: 30px 0px 29px 100px;
+        margin-left: -35px;
+      }
+      .contact-email-address a {
+        color: #f98731;
+      }
+
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        .enquery-content {
+          padding: 14px 0px 30px 0px;
+        }
+        .enquery-content img {
+          margin-left: 20px;
+        }
+        .contact-email-address {
+          padding: 20px 0px 17px 100px;
+        }
+      }
+      .contact-phone-support {
+        margin-top: 40px;
+      }
+
+      .contact-last-sec-column {
+        border: #dddddd 1px solid;
+        display: flex;
+        padding: 30px;
+        margin-bottom: 20px;
+        /* margin-left: 30px; */
+      }
+      .contact-last-sec-column img {
+        margin-right: 20px;
+      }
+      .contact-last-sec-column p {
+        font-size: 24px;
+      }
+      .contact-last-sec-column span {
+        color: #f98731;
+      }
+      .cmail-blocks {
+        font-size: 30px;
+      }
+      .coreplus-contact-bottom-section {
+        margin-bottom: 100px;
+      }
+      .servicing-all-australia {
+        margin-top: 44px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="desktop-view">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-us-hero-text">
+              <h1>Let’s chat with our live support team</h1>
+              <p>Live Support is available</p>
+              <p>Monday-Saturday 09:00 AM - 5.00 PM (AEST)</p>
+            </div>
+            <div class="contact-hero-agents-desktop">
+              <img
+                class="agents agent1"
+                src="/templates/images/cca1.png"
+                width="80px"
+                alt=""
+              />
+              <img
+                class="agents agent2"
+                src="/templates/images/cca2.png"
+                width="80px"
+                alt=""
+              />
+              <img
+                class="agents agent3"
+                src="/templates/images/cca3.png"
+                width="80px"
+                alt=""
+              />
+              <img
+                class="agents agent5"
+                src="/templates/images/cca5.png"
+                width="80px"
+                alt=""
+              />
+              <img
+                class="agents agent6"
+                src="/templates/images/cca6.png"
+                width="80px"
+                alt=""
+              />
+              <img
+                class="agents agent4"
+                src="/templates/images/cca4.png"
+                width="80px"
+                alt=""
+              />
+            </div>
+            <div class="contact-send-message-desktop">
+              <a href="">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Send us a
+                message &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-us-gif">
+              <img src="images/contact-us.gif" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
+    <div class="contact-phone-support">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="cc-customer cc-block">
+              <div>
+                <img src="/templates/images/customer.svg" alt="" />
+              </div>
+              <div class="cc-block-span">
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
+                >
+              </div>
+              <div class="cc-block-button">
+                <a href="">Schedule a Demo &#8594;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cc-customer cc-block">
+              <div>
+                <img src="/templates/images/telephone.svg" alt="" />
+              </div>
+              <div class="cc-block-span">
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
+                >
+              </div>
+              <div class="cc-block-button">
+                <a href="">Schedule Phone Support &#8594;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cc-customer cc-block">
+              <div>
+                <img src="/templates/images/help-center.svg" alt="" />
+              </div>
+              <div class="cc-block-span">
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magn.</span
+                >
+              </div>
+              <div class="cc-block-button">
+                <a href="">Help Center &#8594;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
+    <div class="general-enquery">
+      <div class="container enquery-container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="enquery-content">
+              <div>
+                <p>For general enquiries Please email us</p>
+              </div>
+              <div>
+                <img src="/templates/images/envelope.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-email-address">
+              <p>
+                Customer Support:
+                <a href="mailto:support@coreplus.com.au"
+                  >support@coreplus.com.au</a
+                >
+              </p>
+              <p>
+                Accounts:
+                <a href="mailto:accounts@coreplus.com.au"
+                  >accounts@coreplus.com.au</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
+    <div class="coreplus-contact-bottom-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-last-sec-column">
+              <div class="">
+                <img src="/templates/images/delivery.svg" alt="" />
+              </div>
+              <div>
+                <p>Want to send us a present through mail?</p>
+                <span
+                  >P.O. BOX 348 Moonee <br />
+                  Ponds Victoria Australia, 3039</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="contact-last-sec-column">
+              <div class="">
+                <img src="/templates/images/australia.svg" alt="" />
+              </div>
+              <div>
+                <p>Servicing All Of Australia</p>
+                <span class="servicing-all-australia">
+                  Adelaide, Canberra, Hobart, Melbourne, Sydney, Brisbane,
+                  Darwin and Perth
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
