@@ -181,6 +181,15 @@
       .contact-email-address a {
         color: #f98731;
       }
+      .contact-email-address-mobile {
+        border-left: #f98731 1px dashed;
+        border-right: #f98731 1px dashed;
+        border-bottom: #f98731 1px dashed;
+        padding: 30px;
+      }
+      .contact-email-address-mobile a {
+        color: #f98731;
+      }
 
       @media screen and (max-width: 1199px) and (min-width: 992px) {
         .enquery-content {
@@ -223,10 +232,36 @@
         margin-top: 44px;
         display: block;
       }
+      .enquery-container-mobile {
+        display: none;
+      }
       @media screen and (max-width: 425px) {
         .contact-us-gif {
           display: none;
         }
+      }
+      @media screen and (max-width: 991px) {
+        .enquery-container {
+          display: none;
+        }
+        .enquery-container-mobile {
+          display: block;
+        }
+      }
+
+      .enquery-mobile {
+        display: flex;
+        justify-content: center;
+        background-color: #f98731;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+      .enquery-mobile img {
+        margin-right: 20px;
+      }
+      .enquery-mobile p {
+        font-size: 20px;
+        color: #fff;
       }
     </style>
   </head>
@@ -387,6 +422,33 @@
                 >
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="enquery-container-mobile container">
+        <div>
+          <div class="enquery-mobile">
+            <div><img src="/templates/images/envelope.svg" alt="" /></div>
+            <div class="enquery-content-mobile">
+              <p>
+                For general enquiries <br />
+                Please email us
+              </p>
+            </div>
+          </div>
+          <div class="contact-email-address-mobile">
+            <p>
+              Customer Support:
+              <a href="mailto:support@coreplus.com.au"
+                >support@coreplus.com.au</a
+              >
+            </p>
+            <p>
+              Accounts:
+              <a href="mailto:accounts@coreplus.com.au"
+                >accounts@coreplus.com.au</a
+              >
+            </p>
           </div>
         </div>
       </div>
