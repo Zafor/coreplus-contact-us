@@ -57,7 +57,7 @@
               />
             </div>
             <div class="contact-send-message-desktop">
-              <a href="">
+              <a href="" class="open-live-chat do-animation">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Send us a
                 message &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
