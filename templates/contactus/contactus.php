@@ -56,8 +56,8 @@
                 alt=""
               />
             </div>
-            <div class="contact-send-message-desktop">
-              <a href="" class="open-live-chat do-animation">
+            <div class="contact-send-message-desktop open-live-chat menu-live-chat">
+              <a href="#" class=" do-animation">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Send us a
                 message &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="cc-block-span">
                   <span>
-                    Delve right into all the advice and answers direct from the
+                    Delve right into all the advice and answers directly from the
                     coreplus Team.
                   </span>
                 </div>
