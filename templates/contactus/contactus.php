@@ -83,9 +83,7 @@
                 </div>
                 <div class="cc-block-span">
                   <span>
-                    Schedule a one-on-one demo call with our customer success
-                    experts to learn more about the coreplus basics and get
-                    started in no time.
+                  Schedule a one-on-one online demo with our customer success team to learn more about coreplus and how to get started in no time.
                   </span>
                 </div>
               </div>
